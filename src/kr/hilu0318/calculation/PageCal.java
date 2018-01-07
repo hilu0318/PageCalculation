@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PageCal {
-	private int numOfLine;
-	private int currentPage;
-	private int beginPage;
-	private int endPage;
-	private boolean nextGroup;
-	private boolean prevGroup;
-	public List<Integer> pagelist;
+	private int numOfLine;		//View Number of Pagination
+	private int currentPage;	
+	private int beginPage;		//Pagination - start Number
+	private int endPage;		//Pagination - end Number
+	private boolean nextGroup;	//Exist Next Pagination
+	private boolean prevGroup;	//Exist Prev Pagination
+	public List<Integer> pagelist;	//Pagination Number List of this Page
 	
 	public PageCal(int currentPage, int numOfLine, int lineOfPage, int total) {
 		int lastPage = total % lineOfPage > 0 ? total/lineOfPage + 1 : total/lineOfPage;
